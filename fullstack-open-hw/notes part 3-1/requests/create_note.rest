@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/notes
+Content-type: application/json
+
+{
+    "content": "VS Code REST client is pretty aight",
+    "important": false
+}
+
+//you can add multiple requests in the same file using ### separators
