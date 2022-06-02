@@ -88,7 +88,6 @@ app.post('/api/persons', (request, response) => {
   const body = request.body
 
     if (!body.name || !body.number) {
-        //calling return is crucial otherwise the code will execute to the very end and the malformed note gets saved to the application
         return response.status(400).json({
             error: 'name and/or number entry missing'
         })
