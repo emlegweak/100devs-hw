@@ -27,7 +27,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
                 .then(quotes => {
                     res.render('index.ejs', { quotes: quotes })
                 })
-                .catch(/* ... */)
+                .catch(error => console.error(error))
         })
 
         app.post('/quotes', (req, res) => {
